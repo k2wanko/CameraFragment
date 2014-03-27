@@ -719,7 +719,7 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
 		camera.setPreviewCallback(new PreviewCallback() {
 			@Override
 			public void onPreviewFrame(byte[] data, Camera camera) {
-				log("data [10] = " + data[10]);
+				//log("data [10] = " + data[10]);
 				onPreviewListener.onPreview(data, camera);
 			}
 		});

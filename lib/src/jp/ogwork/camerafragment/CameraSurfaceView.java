@@ -618,8 +618,8 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
 		cameraOpenTask.execute();
 
 		cameraSettings.format = format;
-		cameraSettings.previewHeight = viewHeight;
-		cameraSettings.previewWidth = viewWidth;
+		//cameraSettings.previewHeight = viewHeight;
+		//cameraSettings.previewWidth = viewWidth;
 
 		if (onDrawListener != null) {
 			mSurfaceThread = new Thread(this);

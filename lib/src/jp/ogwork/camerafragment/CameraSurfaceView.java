@@ -757,9 +757,9 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
 			setParameters(params);
 		}
 
-		//log("setPreviewSize() selected size [" + previewSize.width + "]*[" + previewSize.height + "]");
-        //cameraSettings.previewWidth = previewSize.width;
-        //cameraSettings.previewHeight = previewSize.height;
+		log("setPreviewSize() selected size [" + previewSize.width + "]*[" + previewSize.height + "]");
+        cameraSettings.previewWidth = previewSize.width;
+        cameraSettings.previewHeight = previewSize.height;
 		return previewSize;
 	}
 

@@ -101,6 +101,10 @@ public class CameraFragment extends Fragment {
 		return cameraSurfaceView.getPreviewAspectRatio();
 	}
 
+    public Camera.Parameters getCameraParam() {
+        return cameraSurfaceView.getCameraParam();
+    }
+
 	public void setSavePictureDir(String saveDirName) {
 		cameraSurfaceView.setSavePictureDir(saveDirName);
 	}

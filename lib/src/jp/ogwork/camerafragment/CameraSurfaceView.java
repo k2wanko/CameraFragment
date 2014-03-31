@@ -147,6 +147,10 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
 		return camera.getParameters().getPreviewSize();
 	}
 
+    public Parameters getCameraParam() {
+        return camera.getParameters();
+    }
+
 	/**
 	 * param cameraDirection : Camera.CameraInfo.CAMERA_FACING_FRONT or
 	 * Camera.CameraInfo.CAMERA_FACING_BACK

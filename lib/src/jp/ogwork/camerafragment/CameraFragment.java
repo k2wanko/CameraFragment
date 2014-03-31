@@ -188,7 +188,7 @@ public class CameraFragment extends Fragment {
 			return null;
 		}
 		fl_camera = new FrameLayout(getActivity());
-		fl_camera.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+		fl_camera.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 		boolean usableInCamera = (Camera.getNumberOfCameras() > 1) ? true : false;
 
 		if (usableInCamera && defaultCameraDirection == Camera.CameraInfo.CAMERA_FACING_FRONT) {
